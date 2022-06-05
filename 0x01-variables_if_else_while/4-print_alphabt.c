@@ -14,7 +14,7 @@ for (alph = 'a'; alph <= 'z'; alph++)
 {
 if (alph == 'e' || alph == 'q')
 {
-alph += 1;
+alph += 0;
 }
 else
 {
