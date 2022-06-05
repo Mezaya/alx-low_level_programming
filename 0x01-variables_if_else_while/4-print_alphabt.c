@@ -2,8 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - program that prints the alphabets in lowercase then uppercase.
- * You can only use the putchar 3 times and no printf allowed
+ * main - program that prints the alphabets in lowercase.
+ * Only the letter e and q shouldn't print
+ * You can only use the putchar 2 times and no printf allowed
  * Return: 0
  */
 int main(void)
