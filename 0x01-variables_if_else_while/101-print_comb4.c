@@ -1,33 +1,34 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-#include <math.h>
 /**
-*  main -  prints all possible combinations of single-digit numbers
-*
-* Return: numbers separate by goma
+ * main - entry point
+ * Description: Print all possible different combinations of two digits
+ * Return: 0
 */
 int main(void)
 {
-char i = '0', j = '0', k = '0';
-int a = 8;
-for (;i <= '9'; i++)
+int i;
+int j;
+int k;
+for (i = 0; i < 10; ++i)
 {
-for (; j < '7'; j++)
+for (j = i + 1; j < 10; ++j)
 {
-for (; k < '3'; k++)
+for (k = j + 1; k < 10; ++k)
 {
-putchar (i);
-putchar (i+1);
-putchar (i+2);
+putchar('0' + i);
+putchar('0' + j);
+putchar('0' + k);
+if (i != 7 || j != 8 || k != 9)
+{
 putchar(',');
 putchar(' ');
 }
 }
-putchar(i);
-//if (i == '9')
-// i = i - '8';
 }
+}
+
 putchar('\n');
+
 return (0);
 }
+
