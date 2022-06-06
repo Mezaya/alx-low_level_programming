@@ -1,38 +1,25 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-#include <math.h>
 /**
-*  main -  prints all possible combinations of single-digit numbers
-*
-* Return: numbers separate by goma
+ * main - a simple program that outputs 0-9 separated by commas
+ * Return: 0 on success
 */
 int main(void)
 {
-int r = 48;
-int b = 49;
-int m = 0, i = 0, a = 8;
-while (i  <= a && a != -1)
+int i;
+int j;
+for (i = 48; i < 57; i++)
 {
-i++;
-while (m <= a)
+for (j = i + 1; j < 58; j++)
 {
-putchar(r);
-putchar(b);
-if (r != 56 || b != 57)
+putchar(i);
+putchar(j);
+if (i != 56 || j != 57)
 {
 putchar(',');
 putchar(' ');
 }
-b++;
-m++;
 }
-r++;
-b = b - a;
-a--;
-i = 0;
-m = 0;
 }
-putchar('\r');
+putchar('\n');
 return (0);
 }
