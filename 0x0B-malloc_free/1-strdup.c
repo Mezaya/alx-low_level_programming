@@ -16,12 +16,14 @@ if (str == NULL)
 return (NULL);
 for (size = 0; str[size] != '\0'; size++);
 m = malloc(size * sizeof(*str) + 1);
+size++;
 if (m == 0)
 return (NULL);
 else
 {
 for (i = 0; i < size; i++)
 m[i] = str[i];
+i++;
 }
 return (m);
 }
