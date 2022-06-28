@@ -6,7 +6,6 @@
 * which contains a copy of the string given as a parameter.
 * @str: string
 * Return: pointer of an array of chars.
-* +1 on the size puts the end of string character.
 */
 char *_strdup(char *str)
 {
