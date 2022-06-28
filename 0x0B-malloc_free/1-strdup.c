@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-* _strdup - return a pointer to a newly allocated space in memory.
+* *_strdup - return a pointer to a newly allocated space in memory
+* which contains a copy of the string given as a parameter.
 * @str: string
-*
-* Return: pointer of an array of chars.
+* Return: 0
 */
 char *_strdup(char *str)
 {
@@ -20,7 +20,7 @@ if (m == 0)
 return (NULL);
 else
 {
-for (; i < size; i++);
+for (; i < size; i++)
 m[i] = str[i];
 }
 return (m);
