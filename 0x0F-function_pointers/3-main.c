@@ -31,6 +31,3 @@ result = calculator(atoi(argv[1]), atoi(argv[3]));
 printf("%d\n", result);
 return (0);
 }
-printf("%d\n", result);
-return (0);
-}
